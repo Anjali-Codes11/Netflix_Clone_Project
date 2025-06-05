@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background-image: url(Assets/img/netflixbanner.jpg);
+    height: 92vh;
+    background-size: max(1200px, 100vw);
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main .box {
+    height: 92vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.70;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    padding: 6px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 80vw;
+    height: 68px;
+    position: relative;
+    z-index: 10;
+
+}
+
+nav img {
+    margin-top: 10px;
+    padding: 12px;
+    width: 150px;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.475);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.152);
+    font-size: medium;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.lang img {
+    padding: 0;
+    width: 20px;
+}
+
+.lang select {
+    background-color: rgba(0, 0, 0, 0.178);
+    color: white;
+    border: none;
+    font-size: medium;
+
+}
+
+.toprit {
+    width: 15vw;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-top {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 4px;
+    border: 0px;
+    background-color: rgb(229, 9, 20);
+    color: white;
+}
+
+.hero {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 26px;
+
+}
+
+.hero> :nth-child(1) {
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    font-style: normal;
+    font-size: 26px;
+    width: 570px;
+
+}
+
+.hero>:nth-child(2) {
+    font-size: 20px;
+    font-weight: 560;
+}
+
+body {
+    background-color: black;
+}
+
+.separator {
+    height: 2px;
+    background-color: red;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+
+.btn-btm {
+    font-family: sans-serif;
+    padding: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    border: 0;
+
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+.main input {
+    border-radius: 4px;
+    padding: 20px;
+    padding-right: 160px;
+    background-color: rgba(0, 0, 0, 0.426);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.49);
+
+}
+
+.Trending {
+    margin-top: 12px;
+    padding-bottom: 20px;
+    margin-bottom: 12px;
+    padding-top: 16px;
+    display: block;
+    margin-left: 100px;
+    font-family: sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: white;
+}
+
+.Trending h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 32px;
+}
+
+.trendmovies {
+    gap: 40px;
+    width: 80vw;
+    padding-left: 16px;
+    margin-right: 140px;
+    margin-left: 140px;
+    display: flex;
+    list-style: none;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    scrollbar-width: none;
+
+}
+
+.trendmovies li {
+    display: inline-block;
+    height: auto;
+}
+
+.trendmovies button {
+    cursor: pointer;
+    background-color: rgba(238, 233, 233, 0);
+    border-color: black;
+    border: 1px;
+
+}
+
+.hit img {
+    
+    background-color: black;
+    border-radius: 10px;
+    position: relative;
+}
+
+.rank {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 6rem;
+    font-weight: 800;
+    position: relative;
+    -webkit-text-stroke: 0.15rem rgba(255, 255, 255, 0.878);
+    text-shadow: 0 0 1.5rem rgba(61, 60, 60, 0.285);
+    bottom: 8rem;
+    left: -5.8rem;
+
+}
+
+.reason {
+    margin-left: 140px;
+    font-family: sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 65px;
+}
+
+.reasons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 60px;
+    margin-right: 70px;
+    margin-top: 20PX;
+
+}
+
+.reasbox {
+    padding-left: 18px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 200px;
+    border-radius: 15px;
+    background-color: rgb(36, 0, 36)
+}
+
+.reason h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.reasbox p {
+    margin-right: 40px;
+    font-size: medium;
+    color: rgb(193, 191, 191);
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.svg img {
+    width: 60px;
+    /* Size for the icon area */
+    height: 60px;
+    background-color: #4a00e0;
+    /* A purple tone similar to the image */
+    border-radius: 10px;
+    display: flex;
+
+    justify-content: end;
+    justify-items: flex-end;
+    align-items: flex-end;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 16px;
+
+    font-size: 2.2em;
+    /* Size of the icon */
+    color: #fff;
+    /* Icon color */
+}
+
+.faq {
+    font-family: sans-serif;
+    font-size: 1.150rem;
+    /* font-weight: 100; */
+    color: white;
+    /* margin-left: 100px; */
+}
+
+.faq h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 144px;
+    margin-bottom: 10px;
+
+}
+
+.box {
+    display: block;
+    background-color: black;
+    padding: 3px;
+    width: 80vw;
+    margin: auto;
+
+}
+
+.box :hover {
+    background-color: rgb(105, 104, 104);
+}
+
+.box span {
+
+    height: 45px;
+    padding: 20px;
+    font-size: x-large;
+
+    background-color: rgb(51, 50, 50);
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    cursor: pointer;
+
+}
+
+.box img {
+    display: inline-flex;
+
+}
+
+.login2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    gap: 8px;
+    align-items: center;
+    padding: 50px;
+    margin: 50px;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+.login2 span {
+    padding: 11px;
+    padding-top: 0px;
+
+}
+
+.login2 input {
+    border-radius: 4px;
+    padding: 18px;
+    padding-right: 350px;
+    background-color: rgba(0, 0, 0, 0.147);
+    font-size: 16px;
+
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.49);
+
+}
+
+footer span {
+    display: flex;
+    margin: 0px 9.6vw;
+
+
+
+    max-width: 80vw;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: rgb(176, 176, 176);
+    padding-bottom: 0px;
+}
+
+footer span a {
+    color: rgb(176, 176, 176);
+    margin-left: 8px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+
+    margin-top: 40px;
+    margin-left: 150px;
+
+
+}
+
+@media screen and (max-width: 1020px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .main {
+        background-size: max(1200px, 100vw);
+    }
+
+    .hero> :nth-child(1) {
+        font-family: "Poppins", sans-serif;
+        justify-content: center;
+        font-style: normal;
+        font-size: 18px;
+        width: 570px;
+
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 14px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 14px;
+    }
+
+    .lang {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .trendmovies {
+        width: 80vw;
+        margin-right: 200px;
+    }
+
+}
+
+.footer-item {
+
+    display: flex;
+    font-family: sans-serif;
+    font-size: 15px;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+
+
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(176, 176, 176);
+
+}
+
+.footbtn {
+
+    padding-left: 16px;
+    padding-right: 20px;
+    margin: 50px 150px;
+    padding-bottom: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.475);
+    border-radius: 5px;
+    color: rgb(127, 127, 127);
+    background-color: rgba(0, 0, 0, 0.152);
+    font-size: medium;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.footlang img {
+    padding: 0;
+    width: 20px;
+}
+
+.footlang select {
+    background-color: rgba(0, 0, 0, 0.178);
+    color: rgb(237, 233, 233);
+    border: none;
+    font-size: medium;
+    font-weight: 500;
+
+}
+
+.netflix {
+    color: rgb(203, 201, 201);
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 0px 150px;
+}
+
+.reCAPTA {
+    font-family: sans-serif;
+    color: rgb(146, 143, 143);
+    font-size: 0.8125rem;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-bottom: 150px;
+
+}
