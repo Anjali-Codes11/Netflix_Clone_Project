@@ -13,6 +13,15 @@ This project replicates the *look and feel* of Netflix India's landing page, inc
 - Frequently Asked Questions (FAQ)
 - Responsive footer with multilingual support
 
+
+## 📸 Project Screenshots
+
+### 🏡 Home Page
+![Home Page](Netflix_Cloned.jpeg)
+
+### 📱 Original vs. Clone (Comparison)
+![Original](Netflix_Original.jpeg)
+
 ---
 🛠 Tech Stack
 
